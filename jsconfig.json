@@ -1,0 +1,10 @@
+{
+    "complierOptions": {
+        "paths": {
+            "@/*": [
+                "./src/*"
+            ]
+        }
+    },
+
+}

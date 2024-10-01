@@ -1,15 +1,12 @@
 import './App.css'
-import Header from './components/layouts/Header'
-import Main from './components/layouts/Main'
+import Home from './components/pages/home/home'
 
 function App() {
   
 
   return (
     <>
-      <h1>todo list</h1>
-      <Header />
-      <Main />
+      <Home />
     </>
   )
 }

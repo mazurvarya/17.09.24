@@ -1,9 +1,18 @@
 {
-    "complierOptions": {
+    "compilerOptions": {
         "paths": {
             "@/*": [
                 "./src/*"
+            ],
+            "@assets/*": [
+
+                "./src/assets/*"
+            ],
+            "@components/*": [
+
+                "./src/components/*"
             ]
+            
         }
     },
 

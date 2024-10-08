@@ -1,0 +1,27 @@
+.header {
+    background-color: var(--back-dark-third);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+
+    h1 {
+        color: var(--text-white);
+    }
+}
+
+.widgets {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+p{
+    color: var(--text-gray);
+}

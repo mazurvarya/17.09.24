@@ -1,0 +1,8 @@
+:root {
+    --back-dark-main: #1C1D22;
+    --back-dark-secondary: #222327;
+    --back-dark-third: #2A2B2F;
+
+    --text-white: white;
+    --text-gray: rgba(255, 255, 255, 0.5);
+}

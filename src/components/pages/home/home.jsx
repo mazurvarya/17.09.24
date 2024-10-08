@@ -1,6 +1,7 @@
-import { ButtonIcon } from "@/components/shared/UI/Buttons/buttons.jsx"
+import { Button, ButtonIcon } from "@/components/shared/UI/Buttons/buttons.jsx"
 import moon from "@/assets/icons/moon.svg"
-import { Button } from "../../shared/UI/Buttons/buttons"
+
+import Header from "@/components/shared/Header/header.jsx"
 
 export default function Home() {
     return (
@@ -17,6 +18,7 @@ export default function Home() {
                     outline: "none",
              }}
              child={"New Template"}></Button>
+            <Header />
         </main>
     )
 }

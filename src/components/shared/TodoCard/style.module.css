@@ -1,0 +1,20 @@
+.card{
+    flex-direction: column;
+    background: #292B31;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+
+    h2 {
+        color: white;
+    }
+
+    h3 {
+        color: lightgray;
+        
+    }
+
+    h4 {
+        color: lightgray;
+    }
+}

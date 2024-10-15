@@ -2,6 +2,15 @@ import { Button, ButtonIcon } from "@/components/shared/UI/Buttons/buttons.jsx"
 import moon from "@/assets/icons/moon.svg"
 
 import Header from "@/components/shared/Header/header.jsx"
+import TodoCard from "@/components/shared/TodoCard/todo.jsx"
+
+const card = {
+    title:"Купить молоко",
+    project:"покупки",
+    status:"в процессе",
+    dueDate:"01.10.2015",
+    progress: 3,
+}
 
 export default function Home() {
     return (
@@ -19,6 +28,7 @@ export default function Home() {
              }}
              child={"New Template"}></Button>
             <Header />
+            <TodoCard card={card}/>
         </main>
     )
 }

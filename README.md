@@ -15,5 +15,5 @@ git push - загрузить изменения на гитхаб
 
 # другие
 
-git config user.name "имя пользователя на гитхабе"
-git config user.email "email на гитхабе"
+git config user.name "mazurvarya"
+git config user.email "mazurova.varya87@mail.ru"

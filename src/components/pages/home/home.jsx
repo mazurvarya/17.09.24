@@ -4,13 +4,29 @@ import moon from "@/assets/icons/moon.svg"
 import Header from "@/components/shared/Header/header.jsx"
 import TodoCard from "@/components/shared/TodoCard/todo.jsx"
 
-const card = {
+const cardMass = [
+    {
     title:"Купить молоко",
     project:"покупки",
     status:"в процессе",
     dueDate:"01.10.2015",
     progress: 3,
-}
+    },
+    {
+    title:"Купить молоко",
+    project:"покупки",
+    status:"в процессе",
+    dueDate:"01.10.2015",
+    progress: 56,
+        },
+    {
+    title:"Вынести мусор",
+    project:"дела по дому",
+    status:"выполнен",
+    dueDate:"01.10.2018",
+    progress: 100,
+    }
+]
 
 export default function Home() {
     return (
@@ -28,7 +44,15 @@ export default function Home() {
              }}
              child={"New Template"}></Button>
             <Header />
-            <TodoCard card={card}/>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "40px" }}>
+                {cardMass.map((card,index) => {
+                    return <TodoCard card={card}/>
+                })
+            }
+            </div>
+
+
+
         </main>
     )
 }

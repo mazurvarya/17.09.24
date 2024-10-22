@@ -5,4 +5,12 @@
 
     --text-white: white;
     --text-gray: rgba(255, 255, 255, 0.5);
+
+    --progress-bar-fill: rgba(255, 255, 255, 0.10);
+    --progress-bar-middle:  #FFA048;
+    --progress-bar-low: #FF7979;
+    --progress-bar-complete: #78D700;
+    
+
+
 }

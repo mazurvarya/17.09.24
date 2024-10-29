@@ -1,16 +1,14 @@
 :root {
-    --back-dark-main: #1C1D22;
-    --back-dark-secondary: #222327;
-    --back-dark-third: #2A2B2F;
+  --back-dark-main: #1c1d22;
+  --back-dark-secondary: #222327;
+  --back-dark-third: #2a2b2f;
+  --back-dark-box: #24262c;
 
-    --text-white: white;
-    --text-gray: rgba(255, 255, 255, 0.5);
+  --text-white: white;
+  --text-gray: rgba(255, 255, 255, 0.5);
 
-    --progress-bar-fill: rgba(255, 255, 255, 0.10);
-    --progress-bar-middle:  #FFA048;
-    --progress-bar-low: #FF7979;
-    --progress-bar-complete: #78D700;
-    
-
-
+  --progress-bar-fill: rgba(255, 255, 255, 0.1);
+  --progress-bar-middle: #ffa048;
+  --progress-bar-low: #ff7979;
+  --progress-bar-complete: #78d700;
 }

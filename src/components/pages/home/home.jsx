@@ -2,7 +2,8 @@ import { Button, ButtonIcon } from "@/components/shared/UI/Buttons/buttons.jsx"
 import moon from "@/assets/icons/moon.svg"
 
 import Header from "@/components/shared/Header/header.jsx"
-import TodoCard from "@/components/shared/TodoCard/todo.jsx"
+
+import TodoBox from "@/components/shared/TodoBox/TodoBox.jsx"
 
 const cardMass = [
     {
@@ -42,15 +43,14 @@ export default function Home() {
                     padding: "12px 24px",
                     outline: "none",
              }}
-             child={"New Template"}></Button>
+             >
+                New templates
+             </Button>
             <Header />
-            <div style={{ display: "flex", flexWrap: "wrap", gap: "40px" }}>
-                {cardMass.map((card,index) => {
-                    return <TodoCard card={card}/>
-                })
-            }
-            </div>
 
+            <TodoBox title={"To do"} todoList={cardMass}/>
+            <TodoBox title={"In progress"} todoList={cardMass}/>
+            <TodoBox title={"Done"} todoList={cardMass}/>
 
 
         </main>

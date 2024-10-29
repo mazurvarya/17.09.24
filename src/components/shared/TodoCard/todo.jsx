@@ -8,10 +8,10 @@ const TodoCard = ({card}) => {
     return (
         <article className={styles.card}>
             <div className={styles.top}>
-            <h2>{card.title}</h2>
-            <h3>{card.project}</h3>
-            <h2>{card.status}</h2>
-            <h5>{card.dueDate}</h5>
+            <h2>{card?.title}</h2>
+            <h3>{card?.project}</h3>
+            <h2>{card?.status}</h2>
+        
 
             
             <div className={styles.progress}>

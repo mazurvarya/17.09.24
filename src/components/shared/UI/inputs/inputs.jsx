@@ -1,3 +1,4 @@
+import { useState } from "react";
 import s from "./inputs.module.css"
 
 function HandleInput(element) {
@@ -14,4 +15,20 @@ const InputDefault = ({ placeholder }) => {
     placeholder={placeholder} />
 }
 
-export { InputDefault }
+const InputPassword = () => {
+
+    const [isVisible, setIsVisible] = useState(false)
+
+    const handleClick = () => {
+        console.log("жмакнули на кнопку")
+        setIsVisible(!isVisible)
+
+    }
+
+    return <div>
+        <input type={isVisible == true ? "text" : "password"} />
+        <button onClick={handleClick}>показать пароль</button>
+    </div>
+}
+
+export { InputDefault, InputPassword }

@@ -1,0 +1,25 @@
+.switcher {
+  width: 262px;
+  height: 42px;
+  background-color: rgb(255, 255, 255, 0.04);
+  border-radius: 22px;
+  padding: 4px;
+  display: flex;
+  button {
+    outline: none;
+    border: none;
+  }
+}
+
+.--active {
+  border-radius: 22px;
+  background-color: rgb(255, 255, 255, 0.06);
+  color: white;
+  font-size: 14px;
+  flex-grow: 1;
+}
+
+.--inactive {
+  color: rgba(255, 255, 255, 0.5);
+  background: none;
+}

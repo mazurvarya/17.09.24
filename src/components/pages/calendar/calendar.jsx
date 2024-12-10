@@ -1,13 +1,13 @@
 import NavBar from "@/components/shared/NavBar/NavBar.jsx"
 
-function NotFound404() {
+function CalendarPage() {
     return (
         <>
         <NavBar />
-        <h1>страница не найдена</h1>
+        <h1>Календарь</h1>
         <main></main>
         </>
     )
 }
 
-export default NotFound404
+export default CalendarPage

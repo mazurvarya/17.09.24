@@ -2,8 +2,8 @@ import style from "./style.module.css";
 import profile from "@assets/icons/profile.svg"
 import main from "@assets/icons/main.svg"
 import logout from "@assets/icons/logout.svg"
-import calender from "@assets/icons/calender.svg"
-import { NavLink } from "react-router-dom";
+import calendar from "@assets/icons/calender.svg"
+import { Link, NavLink } from "react-router-dom";
 
 const linksList = [
 {
@@ -11,8 +11,8 @@ const linksList = [
     icon: profile
 },
 {
-    link: "/calender",
-    icon: calender
+    link: "/calendar",
+    icon: calendar
 },
 {
     link: "/",
@@ -35,6 +35,9 @@ const NavBar = () => {
                     })
                 }
             </nav>
+            <Link to={"/login"}>
+                <img src={logout} alt="" />
+            </Link>
         </aside>
     )
 }

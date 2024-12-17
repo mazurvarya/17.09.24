@@ -1,7 +1,47 @@
 import Switcher from "@/components/shared/Switch/switch.jsx"
 import style from "./style.module.css"
+import SidebarCollapsNav from "@/components/shared/SidebarCollapsNav/SidebarCollapsNav.jsx"
 // import { useState } from "react"
 
+const navList = [
+    {
+        title: "UI",
+        link: "",
+    },
+    {
+        title: "UX",
+        link: "",
+    },
+    {
+        title: "Front",
+        link: "",
+    },
+    {
+        title: "Back",
+        link: "",
+    }
+    
+]
+
+const navListTask = [
+    {
+        title: "UI",
+        link: "",
+    },
+    {
+        title: "UX",
+        link: "",
+    },
+    {
+        title: "fgredsedgs",
+        link: "",
+    },
+    {
+        title: "Bacrgse",
+        link: "",
+    }
+    
+]
 
 const ProjectsSidebar = () => {
     return (
@@ -9,7 +49,8 @@ const ProjectsSidebar = () => {
             <div className={style.projects}>
                 <h1>Projects</h1>
             </div>
-
+            <SidebarCollapsNav title="Projects" navList={navList}/>
+            <SidebarCollapsNav title="Tasks" navList={navListTask}/>
             <Switcher />
         </div>
 

@@ -4,6 +4,7 @@ import main from "@assets/icons/main.svg"
 import logout from "@assets/icons/logout.svg"
 import calendar from "@assets/icons/calender.svg"
 import { Link, NavLink } from "react-router-dom";
+import { Fragment } from "react";
 
 const linksList = [
 {
@@ -27,11 +28,13 @@ const NavBar = () => {
                 {
                     linksList.map(function(item, i) {
                         console.log("номер", i, item);
-                        return <>
-                        <NavLink to={item.link}>
+                        return (
+                        <Fragment key={i}>
+                        <NavLink className={({isActive})=> isActive ? "nav-link --active-link" : "navlink"} to={item.link}>
                             <img src={item.icon} alt="" />
                         </NavLink>
-                        </>
+                        </Fragment>
+                        )
                     })
                 }
             </nav>

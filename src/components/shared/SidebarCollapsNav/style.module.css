@@ -1,0 +1,16 @@
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: var(--text-white);
+}
+
+.top {
+
+}
+
+.navigation {
+    li {
+        margin-bottom: 10px;
+    }
+}

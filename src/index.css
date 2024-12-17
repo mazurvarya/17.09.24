@@ -9,14 +9,16 @@ button {
 }
 
 
-
-.active{
+.nav-link {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 44px;
   width: 44px;
   padding: 13px;
-  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+}
+
+.--active-link{
+  background-color: rgba(255, 255, 255, 0.1);
 }

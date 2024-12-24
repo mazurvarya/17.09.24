@@ -1,8 +1,0 @@
-.form {
-    background-color: var(--back-dark-main);
-    padding: 24px 21px;
-    border-radius: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}

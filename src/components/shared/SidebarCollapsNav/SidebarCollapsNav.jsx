@@ -1,35 +1,29 @@
-import { useState } from "react"
-import style from "./style.module.css"
+import { useState } from "react";
+import style from "./style.module.css";
 
+const SidebarCollapsNav = ({ navList, title, navListTask }) => {
+  const [isCollapse, setisCollapse] = useState(false);
 
+  const HandleCollapse = () => {
+    setisCollapse(!isCollapse);
+  };
 
-const SidebarCollapsNav = ({navList, title, navListTask}) => {
-    const [isCollapse, setisCollapse] = useState(false)
+  return (
+    <div className={style["accordion"]}>
+      <div onClick={HandleCollapse} className={style["top"]}>
+        <h2>{title}</h2>
+      </div>
 
-    const HandleCollapse = () => {
-        setisCollapse(!isCollapse)
-    }
+      {isCollapse && (
+        <ul className={style["navigation"]}>
+          <li>All {title} (3)</li>
+          {navList.map((item, i) => {
+            return <li key={i}>{item.title}</li>;
+          })}
+        </ul>
+      )}
+    </div>
+  );
+};
 
-
-    
-    return (
-        <div className={style["accordion"]}>
-            <div onClick={HandleCollapse} className={style["top"]}>
-                <h2>{title}</h2>
-            </div>
-
-            {isCollapse && (
-            <ul className={style["navigation"]}>
-                <li>All {title} (3)</li>
-                {
-                    navList.map((item, i) => {
-                        return <li key={i}>{item.title}</li>
-                    })
-                }
-            </ul>
-            )}
-        </div>
-    )
-}
-
-export default SidebarCollapsNav
+export default SidebarCollapsNav;

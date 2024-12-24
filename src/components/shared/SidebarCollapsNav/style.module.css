@@ -1,16 +1,18 @@
 .accordion {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    color: var(--text-white);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: var(--text-white);
 }
 
 .top {
-
 }
 
 .navigation {
-    li {
-        margin-bottom: 10px;
-    }
+  border-left: 2px solid rgba(255, 255, 255, 0.1);
+  li {
+    margin-bottom: 10px;
+    list-style-position: inside;
+    list-style-image: url("./line.png");
+  }
 }

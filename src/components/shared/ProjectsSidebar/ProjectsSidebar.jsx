@@ -3,25 +3,25 @@ import style from "./style.module.css"
 import SidebarCollapsNav from "@/components/shared/SidebarCollapsNav/SidebarCollapsNav.jsx"
 // import { useState } from "react"
 
-const navList = [
-    {
-        title: "UI",
-        link: "",
-    },
-    {
-        title: "UX",
-        link: "",
-    },
-    {
-        title: "Front",
-        link: "",
-    },
-    {
-        title: "Back",
-        link: "",
-    }
+// const navList = [
+//     {
+//         title: "UI",
+//         link: "",
+//     },
+//     {
+//         title: "UX",
+//         link: "",
+//     },
+//     {
+//         title: "Front",
+//         link: "",
+//     },
+//     {
+//         title: "Back",
+//         link: "",
+//     }
     
-]
+// ]
 
 const navListTask = [
     {
@@ -33,13 +33,48 @@ const navListTask = [
         link: "",
     },
     {
-        title: "fgredsedgs",
+        title: "In progress",
         link: "",
     },
     {
-        title: "Bacrgse",
+        title: "Done",
         link: "",
     }
+    
+]
+
+const projectsList = [
+    {
+        title:"Дизайн",
+        link: "",
+    },
+    {
+        title:"Верстка",
+        link: "",
+    },
+    {
+        title:"Разработка",
+        link: "",
+    },
+    {
+        title:"Тестирование",
+        link: "",
+    }
+]
+
+const Messengers = [
+    {
+        title:"Chats",
+        link: "",
+    },
+    {
+        title:"shunya",
+        link: "",
+    },
+    {
+        title:"dsc",
+        link: "",
+    },
     
 ]
 
@@ -49,8 +84,9 @@ const ProjectsSidebar = () => {
             <div className={style.projects}>
                 <h1>Projects</h1>
             </div>
-            <SidebarCollapsNav title="Projects" navList={navList}/>
+            <SidebarCollapsNav title="Projects" navList={projectsList}/>
             <SidebarCollapsNav title="Tasks" navList={navListTask}/>
+            <SidebarCollapsNav title="Messengers" navList={Messengers}/>
             <Switcher />
         </div>
 

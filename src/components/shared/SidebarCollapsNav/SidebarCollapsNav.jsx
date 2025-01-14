@@ -1,7 +1,7 @@
 import { useState } from "react";
 import style from "./style.module.css";
 
-const SidebarCollapsNav = ({ navList, title, navListTask }) => {
+const SidebarCollapsNav = ({ navList, title }) => {
   const [isCollapse, setisCollapse] = useState(false);
 
   const HandleCollapse = () => {
@@ -16,7 +16,7 @@ const SidebarCollapsNav = ({ navList, title, navListTask }) => {
 
       {isCollapse && (
         <ul className={style["navigation"]}>
-          <li>All {title} (3)</li>
+          <li>All {title} ({navList.length})</li>
           {navList.map((item, i) => {
             return <li key={i}>{item.title}</li>;
           })}

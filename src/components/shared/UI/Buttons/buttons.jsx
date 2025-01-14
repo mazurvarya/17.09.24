@@ -9,7 +9,7 @@ const ButtonIcon = ({icon, style}) => {
     )
 }
 
-const Button = ({text, styles, children}) => {
+const Button = ({styles, children}) => {
     return <button style={styles}>{children}</button>
 }
 

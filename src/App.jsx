@@ -6,6 +6,7 @@ import Main from '@/components/pages/main/main.jsx';
 import CalendarPage from '@/components/pages/calendar/calendar.jsx';
 import NotFound404 from '@/components/pages/404/404.jsx';
 import Login from '@/components/pages/login/login.jsx';
+import { TodoPage } from '@/components/pages/TodoPage/TodoPage.jsx';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/" element={<Main />}/>
         <Route path="/calendar" element={<CalendarPage />}/>
         <Route path="*" element={<NotFound404 />}/>
+        <Route path="/todo/:id/:title" element={<TodoPage />}/>
     </Routes>
     </BrowserRouter>
     </>

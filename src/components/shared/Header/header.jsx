@@ -9,16 +9,16 @@ import { useState } from "react"
 
 const Header = () => {
 
-    const (isSearchActive, setIsSearchActive) = useState(false)
+    // const (isSearchActive, setIsSearchActive) = useState(false)
 
-     const handleSearch = (query) => {
-        console.log('Поиск:', query);
-
+    //  const handleSearch = (query) => {
+    //     console.log('Поиск:', query);
+        
     return ( 
         <header className={style.header}>
             <h1>Welcome back, Username</h1>
             <div className={style.widgets}>
-            <SearchBar onSearch={handleSearch} />
+            {/* <SearchBar onSearch={handleSearch} /> */}
                 <ButtonIcon icon={search}/>
                 <ButtonIcon icon={notification}/>
                 <div className={style.date}>
@@ -29,4 +29,5 @@ const Header = () => {
         </header>
     )
 }
+// }
 export default Header
